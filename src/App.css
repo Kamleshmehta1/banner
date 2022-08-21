@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  background-size: cover;
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./car.jpg");
+}
+
+.nav-container {
+  height: 40vh;
+}
+
+.nav-ul {
+  float: right;
+  margin-right: 300px;
+  text-align: center;
+  padding: 20px;
+  color: #fff;
+  list-style: none;
+}
+
+.links {
+  float: right;
+  cursor: pointer;
+  text-align: left;
+  margin: 20px 12px 20px 12px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: font-size 0.25s ease-out;
+}
+
+.links:hover {
+  font-size: 16px;
+  transform-origin: bottom left;
+}
+
+.bars {
+  cursor: pointer;
+  position: absolute;
+  margin-top: 40px;
+  right: 40px;
+  color: #fff;
+  font-size: 1.5rem;
+  top: 0px;
+}
+
+.high-light {
+  background-color: #01c2ff;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+}
+.logo {
+  color: #fff;
+  margin: 20px 200px 0 0;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.title {
+  position: absolute;
+  color: #01c2ff;
+  font-weight: 600;
+  font-size: 3rem;
+  left: 300px;
+}
+.description {
+  position: absolute;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 80px;
+  left: 300px;
+}
+
+.button {
+  position: absolute;
+  left: 300px;
+  margin-top: 130px;
+  cursor: pointer;
+  background-color: #01c2ff;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+.button:hover {
+  font-size: 1.55rem;
+}
+
+.footer {
+  height: auto;
+  padding: 0 135px 4px 135px;
+  margin: auto;
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-title {
+  flex: 25%;
+  background-color: #000;
+}
+
+.h3 {
+  color: #01b8f0;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+}
+.footer-padd {
+  margin-left: 145px;
+  background-color: #000;
+  padding: 15px;
+}
+.footerP {
+  color: #fff;
+  text-align: left;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+@media screen and (min-width: 900px) {
+  .bars {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .nav-ul {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .toggle {
+    background-color: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+    margin: 0;
+    text-align: left;
+    display: flex;
+    float: none;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .back {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+      url("./car.jpg");
+    height: 100vh;
+  }
+  .logo {
+    position: absolute;
+    left: 50px;
+    top: 20px;
+  }
+
+  .center {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    position: relative;
+  }
+
+  .links {
+    display: none;
+    width: auto;
+    text-align: left;
+  }
+
+  .linkToggle {
+    display: block;
+  }
+
+  .bars {
+    display: block;
+  }
+
+  .footer-title {
+    flex: 50%;
+  }
+
+  .footer {
+    height: auto;
+    padding: 0;
+  }
+
+  .footer-padd {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer-title {
+    flex: 100%;
+  }
+}
+
+@media screen and (max-width: 724px) {
+  .title {
+    top: 200px;
+  }
+
+  .description {
+    top: 250px;
+  }
+
+  .button {
+    top: 265px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .middle {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    right: 150px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .title {
+    top: 100px;
+  }
+
+  .description {
+    top: 200px;
+  }
+
+  .button {
+    top: 280px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .logo {
+    margin: 20px 100px 0 0;
+    text-align: center;
+  }
+}
